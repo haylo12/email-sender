@@ -2,9 +2,9 @@
  This is a scripty to send emails
  
  import smtplib
-from email.message import EmailMessage
-from string import Template
-from pathlib import Path
+ from email.message import EmailMessage
+ from string import Template
+ from pathlib import Path
 
 html = Template(Path("index.hmtl").read_text())
 email = EmailMessage()
